@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button type="button" onclick="Closure()">Get Today's Quote</button>
+<p id="Closure"></p>
+<script>
+function getQuote (storiesStatement) {
+var politicsStatement = "Politics always change.";
+function prepareQuote (realityStatement) {
+return politicsStatement + storiesStatement + " " + realityStatement;
+}
+return prepareQuote;
+}
+function Closure() {
+var todaysQuote = getQuote (" Stories"); var message = todaysQuote (" never do.");
+document.getElementById("Closure").innerHTML = message;
+}
+</script>
+</body>
+</html>
